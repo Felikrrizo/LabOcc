@@ -221,8 +221,10 @@ derrumbe:
     bl RectanguloPintado    
 
 //edificio un poco abajo
-    movz x24, 0xFFF,lsl 16
+    movz x24, 0xFF8,lsl 16
     bl Delay
+
+    bl background
 
     //Edificio derecha LUZ?
     mov x1, 400         			//seteo tamaño   (alto)
@@ -425,12 +427,13 @@ derrumbe:
     bl posicion
     bl RectanguloPintado
 */
-
-    bl background
+    
 
 // izquierda de nuevo
-    movz x24, 0xFFF,lsl 16
+    movz x24, 0xFF8,lsl 16
     bl Delay
+
+    bl background
 
     //Edificio derecha LUZ?
     mov x1, 400         			//seteo tamaño   (alto)
@@ -464,51 +467,92 @@ derrumbe:
     mov x19, 4 					//bits per pixel 
     bl posicion
     bl RectanguloPintado
+
+
 // loop hasta el suelo de que se derrumba
-    movz x24, 0xFFF,lsl 16
+    movz x24, 0xFF8,lsl 16
     bl Delay
+    
+    bl background
 
     //Edificio derecha LUZ?
-    mov x1, 400         			//seteo tamaño   (alto)
+    mov x1, 410         			//seteo tamaño   (alto)
     mov x2, 240					// seteo tamaño  (ancho)
     movz x10, 0x86, lsl 16
     movk x10, 0x1C10, lsl 00	   
-    mov x3, 130   		// x3 es la coordenada de Y
+    mov x3, 120   		// x3 es la coordenada de Y
     movz x4, 400				// x4 es la coordenada de X
     mov x19, 4 					//bits per pixel 
     bl posicion
     bl RectanguloPintado
 
     //Edificio derecha luz?
-    mov x1, 80         			//seteo tamaño   (alto)
+    mov x1, 90         			//seteo tamaño   (alto)
     mov x2, 160					// seteo tamaño  (ancho)
     movz x10, 0x97, lsl 16
     movk x10, 0x2615, lsl 00	   
-    mov x3, 130   		// x3 es la coordenada de Y
+    mov x3, 120   		// x3 es la coordenada de Y
     movz x4, 480				// x4 es la coordenada de X
     mov x19, 4 					//bits per pixel 
     bl posicion
     bl RectanguloPintado
 
     //Edificio derecha luz?
-    mov x1, 460         			//seteo tamaño   (alto)
+    mov x1, 470         			//seteo tamaño   (alto)
     mov x2, 240					// seteo tamaño  (ancho)
     movz x10, 0x86, lsl 16
     movk x10, 0x1613, lsl 00	   
-    mov x3, 300   		// x3 es la coordenada de Y
+    mov x3, 290   		// x3 es la coordenada de Y
     movz x4, 400				// x4 es la coordenada de X
     mov x19, 4 					//bits per pixel 
     bl posicion
     bl RectanguloPintado
 
-    bl background
-
-    movz x24, 0xFFF,lsl 16
-    bl Delay 
 // para abajo nomas
 
-    movz x24, 0xFFF,lsl 16
+    movz x24, 0xFF8,lsl 16
     bl Delay
+    
+    bl background
+
+    //Edificio derecha LUZ?
+    mov x1, 390         			//seteo tamaño   (alto)
+    mov x2, 240					// seteo tamaño  (ancho)
+    movz x10, 0x86, lsl 16
+    movk x10, 0x1C10, lsl 00	   
+    mov x3, 140   		// x3 es la coordenada de Y
+    movz x4, 400				// x4 es la coordenada de X
+    mov x19, 4 					//bits per pixel 
+    bl posicion
+    bl RectanguloPintado
+
+    //Edificio derecha luz?
+    mov x1, 90         			//seteo tamaño   (alto)
+    mov x2, 160					// seteo tamaño  (ancho)
+    movz x10, 0x97, lsl 16
+    movk x10, 0x2615, lsl 00	   
+    mov x3, 140   		// x3 es la coordenada de Y
+    movz x4, 480				// x4 es la coordenada de X
+    mov x19, 4 					//bits per pixel 
+    bl posicion
+    bl RectanguloPintado
+
+    //Edificio derecha luz?
+    mov x1, 450         			//seteo tamaño   (alto)
+    mov x2, 240					// seteo tamaño  (ancho)
+    movz x10, 0x86, lsl 16
+    movk x10, 0x1613, lsl 00	   
+    mov x3, 310   		// x3 es la coordenada de Y
+    movz x4, 400				// x4 es la coordenada de X
+    mov x19, 4 					//bits per pixel 
+    bl posicion
+    bl RectanguloPintado
+
+// Y mas abajo
+    movz x24, 0xFF8,lsl 16
+    bl Delay
+    
+    bl background
 
     //Edificio derecha LUZ?
     mov x1, 360         			//seteo tamaño   (alto)
@@ -522,11 +566,11 @@ derrumbe:
     bl RectanguloPintado
 
     //Edificio derecha luz?
-    mov x1, 80         			//seteo tamaño   (alto)
+    mov x1, 70         			//seteo tamaño   (alto)
     mov x2, 160					// seteo tamaño  (ancho)
     movz x10, 0x97, lsl 16
     movk x10, 0x2615, lsl 00	   
-    mov x3, 170   		// x3 es la coordenada de Y
+    mov x3, 160   		// x3 es la coordenada de Y
     movz x4, 480				// x4 es la coordenada de X
     mov x19, 4 					//bits per pixel 
     bl posicion
@@ -542,10 +586,6 @@ derrumbe:
     mov x19, 4 					//bits per pixel 
     bl posicion
     bl RectanguloPintado
-
-    movz x24, 0xFFF,lsl 16
-    bl Delay 
-
 //
 
 
