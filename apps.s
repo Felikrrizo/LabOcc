@@ -17,10 +17,15 @@ loopdia:
     mov x22, GPIO_BASE
     str wzr, [x22, GPIO_GPFSEL0]
     ldr w10, [x22, GPIO_GPLEV0]
+
     and w17, w10, 0b00000010 // w
 	cbnz w17, dia  // Saltar a pintar_dia si la condición se cumple
-    and w23, w10, 0x00000008 // s
+    
+    and w23, w10, 0b00001000 // s
 	cbnz w23, noche 
+
+    and w18, w10, 0b00000100 // a
+    cbnz w18, derrumbar
 
     b loopdia
     
@@ -38,4 +43,12 @@ noche:
     add sp,sp,#8
     br lr
     b loopdia
+
+derrumbar:
+    bl derrumbe
+    ldr lr,[sp]
+    add sp,sp,#8
+    br lr
+    b loopdia
+
 

@@ -1,15 +1,16 @@
 	
 .equ SCREEN_WIDTH   ,   640
 .equ SCREEN_HEIGHT ,    480
-.globl RectanguloPintado, posicion, circulo, triangulo,fun_delay
+.globl RectanguloPintado, posicion, circulo, triangulo,Delay,Mover_elem_arr,sol_mov
 
 //------------- FUNCIONES -----------------------------------------------------------------------------------
-fun_delay:
-	mov x9,x8
+Delay:
 
-	delay:
-		sub x9,x9,1
-		cbnz x9,delay
+stay11:
+	sub x24, x24, 1
+	cbnz x24, stay11
+
+
 ret
 
 // Rectangulo y cuadrado
