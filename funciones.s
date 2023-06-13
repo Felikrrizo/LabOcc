@@ -1,7 +1,7 @@
 	
 .equ SCREEN_WIDTH   ,   640
 .equ SCREEN_HEIGHT ,    480
-.globl RectanguloPintado, posicion, circulo, triangulo,Delay,Mover_elem_arr,sol_mov
+.globl RectanguloPintado, posicion, circulo, triangulo,Delay,linea_diagonal
 
 //------------- FUNCIONES -----------------------------------------------------------------------------------
 Delay:
@@ -172,3 +172,4 @@ paint_pixel://colorea el pixel (x0, x1) con el color en x10
 	ldr x5, [sp, #0]       // devuelvo el valor original de x5
 	add sp, sp, #8		   // regreso el valor de sp
 ret
+
