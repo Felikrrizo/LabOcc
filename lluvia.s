@@ -52,7 +52,7 @@ funcionLoca:
 
     movz x3, 0
     looploco:
-        movz x24, 0xFF8,lsl 16
+        movz x24, 0xFF2,lsl 16
         bl Delay 
 
         mov x1, 10      // alto
@@ -62,7 +62,7 @@ funcionLoca:
         bl primerSprite
 
         // agregar delay
-        movz x24, 0xFF8,lsl 16
+        movz x24, 0xFF2,lsl 16
         bl Delay 
 
         
@@ -74,7 +74,7 @@ funcionLoca:
         bl primerSprite
         
         // agregar delay
-        movz x24, 0xFF8,lsl 16
+        movz x24, 0xFF2,lsl 16
         bl Delay 
 
         

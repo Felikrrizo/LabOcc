@@ -21,14 +21,16 @@ loopdia:
     and w17, w10, 0b00000010 // w
 	cbnz w17, dia  // Saltar a pintar_dia si la condición se cumple
     
-    and w18, w10, 0b00000100 // a
+    and w18, w10, 0b00000100 // a 
     cbnz w18, derrumbar
 
     and w23, w10, 0b00001000 // s
 	cbnz w23, noche 
 
-    and w18, w10, 0b00010000 // a
+    and w18, w10, 0b00010000 // d
     cbnz w18, lluvia
+
+    
 
     b loopdia
     
