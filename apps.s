@@ -33,6 +33,7 @@ loopdia:
     b loopdia
     
 dia:
+    mov x26, 0  
     bl pintar_dia
     ldr lr,[sp]
     add sp,sp,#8
@@ -41,21 +42,24 @@ dia:
     b loopdia
 
 noche:
+    mov x26, 1
     bl pintar_noche
     ldr lr,[sp]
     add sp,sp,#8
     br lr
     b loopdia
 
-derrumbar:
-    bl derrumbe
+derrumbar: 
+    cmp x26, 0
+    beq derrumbe
     ldr lr,[sp]
     add sp,sp,#8
     br lr
     b loopdia
 
 lluvia:
-    bl llover
+    cmp x26, 1
+    beq llover
     ldr lr,[sp]
     add sp,sp,#8
     br lr
