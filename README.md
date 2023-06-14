@@ -37,59 +37,62 @@ $ make runGPIOM
 
 Ejecutar *luego* de haber corrido qemu.
 
-## Como correr qemu y gcc usando Docker containers
+# Lab Org. y Arq. de Computadoras
 
-Los containers son maquinas virtuales livianas que permiten correr procesos individuales como el qemu y gcc.
+* Configuración de pantalla: `640x480` pixels, formato `ARGB` 32 bits.
+* El registro `X0` contiene la dirección base del FrameBuffer (Pixel 1).
+* El código de cada consigna debe ser escrito en el archivo _app.s_.
+* El archivo _start.s_ contiene la inicialización del FrameBuffer **(NO EDITAR)**, al finalizar llama a _app.s_.
+* El código de ejemplo pinta toda la pantalla un solo color.
 
-Para seguir esta guia primero tienen que instala docker y asegurarse que el usuario que vayan a usar tenga permiso para correr docker (ie dockergrp) o ser root
+## Estructura
 
-### Linux
- * Para construir el container hacer
+* **[apps.s](app.s)** Este archivo contiene la apliación. Todo el hardware ya está inicializado anteriormente.
+* **[dia.s](dia.s)** Este archivo contiene el codigo implementado para la creacion de la escena de dia.
+* **[noche.s](noche.s)** Este archivo contiene el codigo implementado para la creacion de la escena de noche.
+* **[funciones.s](funciones.s)** Contiene las funciones de creacion, dibujado y pintado de formas utulizadas. 
+* **[animaciones.s](animaciones.s)** Este archivo contiene toda el codigo implementado necesario para realizar las animaciones presentadas en el laboratorio.
+* **[lluvia.s](lluvia.s)** Este archivo contiene la funcion encargada de dibujar lluvia en las esecenas.
+* **[ovni.s](ovni.s)**  Este archivo contiene la animacion de un ovni para utilizar sobre las escenas.
+* **[start.s](start.s)** Este archivo realiza la inicialización del hardware.
+* **[Makefile](Makefile)** Archivo que describe como construir el software _(que ensamblador utilizar, que salida generar, etc)_.
+* **[memmap](memmap)** Este archivo contiene la descripción de la distribución de la memoria del programa y donde colocar cada sección.
+
+* **README.md** este archivo.
+
+## Uso
+
+**Para correr el proyecto ejecutar**
+
 ```bash
-docker build -t famaf/rpi-qemu .
+$ make runQEMU
 ```
- * Para arrancarlo
+Esto construirá el código y ejecutará qemu para su emulación.
+
+**Para correr el gpio manager**
+
 ```bash
-xhost +
-cd rpi-asm-framebuffer
-docker run -dt --name rpi-qemu --rm -v $(pwd):/local --privileged -e "DISPLAY=${DISPLAY:-:0.0}" -v /tmp/.X11-unix:/tmp/.X11-unix -v "$HOME/.Xauthority:/root/.Xauthority:rw" famaf/rpi-qemu
-```
- * Para correr el emulador y el simulador de I/O
-```bash
-docker exec -d rpi-qemu make runQEMU
-docker exec -it rpi-qemu make runGPIOM
-```
- * Para terminar el container
-```bash
-docker kill rpi-qemu
+$ make runGPIOM
 ```
 
-### MacOS
-En MacOS primero tienen que [instalar un X server](https://medium.com/@mreichelt/how-to-show-x11-windows-within-docker-on-mac-50759f4b65cb) (i.e. XQuartz)
- * Para construir el container hacer
-```bash
-docker build -t famaf/rpi-qemu .
-```
- * Para arrancarlo
-```bash
-xhost +
-cd rpi-asm-framebuffer
-docker run -dt --name rpi-qemu --rm -v $(pwd):/local --privileged -e "DISPLAY=host.docker.internal:0" -v /tmp/.X11-unix:/tmp/.X11-unix -v "$HOME/.Xauthority:/root/.Xauthority:rw" famaf/rpi-qemu
-```
- * Para correr el emulador y el simulador de I/O
-```bash
-docker exec -d rpi-qemu make runQEMU
-docker exec -it rpi-qemu make runGPIOM
-```
- * Para terminar el container
-```bash
-docker kill rpi-qemu
-```
-----------------------------------
-### Otros comandos utiles
-```bash
-# Correr el container en modo interactivo
-docker run -it --rm -v $(pwd):/local --privileged -e "DISPLAY=${DISPLAY:-:0.0}" -v /tmp/.X11-unix:/tmp/.X11-unix -v "$HOME/.Xauthority:/root/.Xauthority:rw" famaf/rpi-qemu
-# Correr un shell en el container
-docker exec -it rpi-qemu /bin/bash
-```
+Ejecutar *luego* de haber corrido qemu.
+
+El QEMU es completamente negro hasta presionar alguna tecla de printeo de escena.
+
+En la terminal donde se corre el comando runGPIOM podemos interactuar con las teclas w,a,s,d y espacio.
+
+## Como usar escenas ##
+Printear escenas:
+'w' : Escena de dia. 
+'s' : Escena de noche.
+
+## Eventos en escenas ##
+Interacciones con escenas:
+Para la escena de dia podemos crear un evento derrume 
+(solo en la escena de dia):
+'a' : Iniciar derrumbe de edificio rojo.
+
+Para la escena de noche tenemos dos tipos de interacciones 
+(solo en la escena de noche):
+'d' : Iniciar evencto lluvia.
+'espacio' : Iniciar evento ovni.
