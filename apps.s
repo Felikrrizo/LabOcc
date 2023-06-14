@@ -30,6 +30,8 @@ loopdia:
     and w18, w10, 0b00010000 // d
     cbnz w18, lluvia
 
+    and w18, w10, 0b00100000 // d
+    cbnz w18, ovni
     
 
     b loopdia
@@ -62,6 +64,14 @@ derrumbar:
 lluvia:
     cmp x26, 1
     beq llover
+    ldr lr,[sp]
+    add sp,sp,#8
+    br lr
+    b loopdia
+
+ovni:
+    cmp x26, 1
+    beq OVNI
     ldr lr,[sp]
     add sp,sp,#8
     br lr
