@@ -19,7 +19,7 @@ OVNI:
     mov x9, 50
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
 
     bl background_ovni
@@ -29,7 +29,7 @@ OVNI:
     mov x9, 60
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
 
     bl background_ovni
@@ -40,7 +40,7 @@ OVNI:
     mov x9, 70
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
 
     bl background_ovni
@@ -51,7 +51,7 @@ OVNI:
     mov x9, 80
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
 
     bl background_ovni
@@ -62,7 +62,7 @@ OVNI:
     mov x9, 90
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
 
     bl background_ovni
@@ -73,7 +73,7 @@ OVNI:
     mov x9, 100
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
 
     bl background_ovni
@@ -84,7 +84,7 @@ OVNI:
     mov x9, 110
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
 
     bl background_ovni
@@ -95,7 +95,7 @@ OVNI:
     mov x9, 120
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -106,7 +106,7 @@ OVNI:
     mov x9, 130
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -117,7 +117,7 @@ OVNI:
     mov x9, 140
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -128,7 +128,7 @@ OVNI:
     mov x9, 150
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -139,7 +139,7 @@ OVNI:
     mov x9, 160
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -150,7 +150,7 @@ OVNI:
     mov x9, 170
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -161,7 +161,7 @@ OVNI:
     mov x9, 180
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -172,7 +172,7 @@ OVNI:
     mov x9, 190
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -183,7 +183,7 @@ OVNI:
     mov x9, 200
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -194,7 +194,7 @@ OVNI:
     mov x9, 200
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -205,7 +205,7 @@ OVNI:
     mov x9, 210
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -216,7 +216,7 @@ OVNI:
     mov x9, 220
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -227,7 +227,7 @@ OVNI:
     mov x9, 220
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -238,7 +238,7 @@ OVNI:
     mov x9, 230
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -249,7 +249,7 @@ OVNI:
     mov x9, 240
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -260,7 +260,7 @@ OVNI:
     mov x9, 250
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -271,7 +271,7 @@ OVNI:
     mov x9, 260
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -282,7 +282,7 @@ OVNI:
     mov x9, 270
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -293,7 +293,7 @@ OVNI:
     mov x9, 280
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -304,7 +304,7 @@ OVNI:
     mov x9, 290
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -315,7 +315,7 @@ OVNI:
     mov x9, 300
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -326,7 +326,7 @@ OVNI:
     mov x9, 310
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -337,7 +337,7 @@ OVNI:
     mov x9, 320
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -348,7 +348,7 @@ OVNI:
     mov x9, 330
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -359,7 +359,7 @@ OVNI:
     mov x9, 340
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -370,7 +370,7 @@ OVNI:
     mov x9, 350
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -381,7 +381,7 @@ OVNI:
     mov x9, 360
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -392,7 +392,7 @@ OVNI:
     mov x9, 370
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -403,7 +403,7 @@ OVNI:
     mov x9, 380
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -415,7 +415,7 @@ OVNI:
     mov x9, 390
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
     bl background_ovni
@@ -426,11 +426,490 @@ OVNI:
     mov x9, 400
     bl spriteOvni
 
-    movz x24, 0xFF8,lsl 16
+    movz x24, 0xFF,lsl 16
     bl Delay
     
+    bl background_ovni
+    
+    //-----
+    
+    mov x8, 80
+    mov x9, 410
+    bl spriteOvni
 
-    //---- animaciones que faltan se las dejo a koda para hacer
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+    //-----
+    mov x8, 80
+    mov x9, 420
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+    //-----
+    mov x8, 80
+    mov x9, 420
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+    //----
+    mov x8, 80
+    mov x9, 430
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+
+    //----
+    mov x8, 80
+    mov x9, 440
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+    //----
+    mov x8, 70
+    mov x9, 445
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+    //----
+    mov x8, 60
+    mov x9, 450
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+    //----
+    mov x8, 50
+    mov x9, 455
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+    //----
+    mov x8, 40
+    mov x9, 460
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+    //----
+    mov x8, 40
+    mov x9, 455
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+    //----
+    mov x8, 44
+    mov x9, 450
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+    //----
+    mov x8, 54
+    mov x9, 445
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+//----
+    mov x8, 56
+    mov x9, 440
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+//----
+    mov x8, 52
+    mov x9, 445
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+
+//----
+    mov x8, 48
+    mov x9, 450
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+//----
+    mov x8, 45
+    mov x9, 455
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+//----
+    mov x8, 41
+    mov x9, 460
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+//----
+    mov x8, 38
+    mov x9, 465
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+//----
+    mov x8, 33
+    mov x9, 470
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+            
+//----
+    mov x8, 28
+    mov x9, 475
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+//----
+    mov x8, 24
+    mov x9, 480
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+//----
+    mov x8, 19
+    mov x9, 485
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+            
+//----
+    mov x8, 14
+    mov x9, 490
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+//----
+    mov x8, 9
+    mov x9, 495
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+        
+//----
+    mov x8, 5
+    mov x9, 500
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+    
+//----
+    mov x8, 3
+    mov x9, 505
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+ //----
+    mov x8, 0
+    mov x9, 510
+    bl spriteOvni
+
+    movz x24, 0xFF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+
+//----
+    mov x8, 480
+    mov x9, 515
+    bl spriteOvni
+
+    movz x24, 0xF,lsl 16
+    bl Delay
+    
+    bl background_ovni
+           
+//PARCHE LOCO
+//Edificio derecha LUZ?
+mov x1, 440         			//seteo tamaño   (alto)
+mov x2, 240					// seteo tamaño  (ancho)
+movz x10, 0x86, lsl 16
+movk x10, 0x1C10, lsl 00	   
+mov x3, 90   		// x3 es la coordenada de Y
+movz x4, 400				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//Edificio derecha luz?
+mov x1, 120         			//seteo tamaño   (alto)
+mov x2, 160					// seteo tamaño  (ancho)
+movz x10, 0x97, lsl 16
+movk x10, 0x2615, lsl 00	   
+mov x3, 90   		// x3 es la coordenada de Y
+movz x4, 480				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//Edificio derecha luz?
+mov x1, 500         			//seteo tamaño   (alto)
+mov x2, 240					// seteo tamaño  (ancho)
+movz x10, 0x86, lsl 16
+movk x10, 0x1613, lsl 00	   
+mov x3, 280   		// x3 es la coordenada de Y
+movz x4, 400				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 1?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0x2d, lsl 16
+movk x10, 0x3000, lsl 00	   
+mov x3, 120   		// x3 es la coordenada de Y
+movz x4, 410				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 2?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0xF0, lsl 16
+movk x10, 0xF045, lsl 00	   
+mov x3, 120   		// x3 es la coordenada de Y
+movz x4, 500				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 3?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0x2d, lsl 16
+movk x10, 0x3000, lsl 00	   
+mov x3, 120   		// x3 es la coordenada de Y
+movz x4, 590				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 4?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0xFF, lsl 16
+movk x10, 0xFF45, lsl 00	   
+mov x3, 200   		// x3 es la coordenada de Y
+movz x4, 410				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 5?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0xFF, lsl 16
+movk x10, 0xFF45, lsl 00	   
+mov x3, 200   		// x3 es la coordenada de Y
+movz x4, 500				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 6?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0x2D, lsl 16
+movk x10, 0x3000, lsl 00	   
+mov x3, 200   		// x3 es la coordenada de Y
+movz x4, 590				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 7?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0x2d, lsl 16
+movk x10, 0x3000, lsl 00	   
+mov x3, 280   		// x3 es la coordenada de Y
+movz x4, 410				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 8?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0x2D, lsl 16
+movk x10, 0x3000, lsl 00	   
+mov x3, 280   		// x3 es la coordenada de Y
+movz x4, 500				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 9?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0xF0, lsl 16
+movk x10, 0xF045, lsl 00	   
+mov x3, 280   		// x3 es la coordenada de Y
+movz x4, 590				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 10?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0xF0, lsl 16
+movk x10, 0xF045, lsl 00	   
+mov x3, 360   		// x3 es la coordenada de Y
+movz x4, 410				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 11?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0x2d, lsl 16
+movk x10, 0x3000, lsl 00	   
+mov x3, 360   		// x3 es la coordenada de Y
+movz x4, 500				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 12?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0xF0, lsl 16
+movk x10, 0xF045, lsl 00	   
+mov x3, 360   		// x3 es la coordenada de Y
+movz x4, 590				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 13?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0x2d, lsl 16
+movk x10, 0x3000, lsl 00	   
+mov x3, 440   		// x3 es la coordenada de Y
+movz x4, 410				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+//ventana derecha 14?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0xF0, lsl 16
+movk x10, 0xF045, lsl 00	   
+mov x3, 440   		// x3 es la coordenada de Y
+movz x4, 500				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+
+//ventana derecha 15?
+mov x1, 45         			//seteo tamaño   (alto)
+mov x2, 45						// seteo tamaño  (ancho)
+movz x10, 0x2d, lsl 16
+movk x10, 0x3000, lsl 00	   
+mov x3, 440   		// x3 es la coordenada de Y
+movz x4, 590				// x4 es la coordenada de X
+mov x19, 4 					//bits per pixel 
+bl posicion
+bl RectanguloPintado
+
+
+
+
+
+
 
 
 
