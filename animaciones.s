@@ -1019,6 +1019,7 @@ derrumbe:
     bl RectanguloPintado
 
 
+
 // para abajo nomas
 
     movz x24, 0xFF8,lsl 16
@@ -1364,7 +1365,10 @@ derrumbe:
 	mov x9,590		//centro en eje x	
 	bl circulo
 
-//
+
+
+
+// Escenas de polvo hasta tapar edificio
      movz x24, 0xFF8,lsl 16
     bl Delay
 
@@ -1374,9 +1378,9 @@ derrumbe:
 	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
 	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
 	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
-	mov x7,30		//radio del circulo 
-	mov x8,385		//centro en eje y 
-	mov x9,540		//centro en eje x	
+	mov x7,55		//radio del circulo 
+	mov x8,300		//centro en eje y 
+	mov x9,430		//centro en eje x	
 	bl circulo 
     movz x10, 0x00C5, lsl 16
 	movk x10, 0xB4AF, lsl 00
@@ -1384,8 +1388,8 @@ derrumbe:
 	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
 	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
 	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
-	mov x7,30		//radio del circulo 
-	mov x8,430		//centro en eje y 
+	mov x7,40		//radio del circulo 
+	mov x8,285		//centro en eje y 
 	mov x9,610		//centro en eje x	
 	bl circulo
     movz x10, 0x00C5, lsl 16
@@ -1395,9 +1399,303 @@ derrumbe:
 	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
 	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
 	mov x7,25		//radio del circulo 
-	mov x8,380		//centro en eje y 
+	mov x8,270		//centro en eje y 
+	mov x9,550		//centro en eje x	
+	bl circulo
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 35		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,35		//radio del circulo 
+	mov x8,230		//centro en eje y 
+	mov x9,580		//centro en eje x	
+	bl circulo
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,25		//radio del circulo 
+	mov x8,232		//centro en eje y 
+	mov x9,540		//centro en eje x	
+	bl circulo 
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,60		//radio del circulo 
+	mov x8,232		//centro en eje y 
+	mov x9,430		//centro en eje x	
+	bl circulo 
+    mov x1, 330         			//seteo tamaño   (alto)
+    mov x2, 255						// seteo tamaño  (ancho)
+    movz x10, 0xC5, lsl 16
+    movk x10, 0xB4AF, lsl 00	   
+    mov x3, 200   		// x3 es la coordenada de Y
+    movz x4, 390				// x4 es la coordenada de X
+    mov x19, 4 					//bits per pixel    
+    bl posicion
+    bl RectanguloPintado
+
+
+    movz x24, 0xFF8,lsl 16
+    bl Delay
+    
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,75		//radio del circulo 
+	mov x8,210		//centro en eje y 
+	mov x9,590		//centro en eje x	
+	bl circulo 
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,65		//radio del circulo 
+	mov x8,195		//centro en eje y 
+	mov x9,435		//centro en eje x	
+	bl circulo 
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,50		//radio del circulo 
+	mov x8,210		//centro en eje y 
+	mov x9,515		//centro en eje x	
+	bl circulo 
+
+
+    movz x24, 0xFF8,lsl 16
+    bl Delay
+    bl background
+
+
+
+// Escenas de polvo hasta destapar edificio 
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,55		//radio del circulo 
+	mov x8,300		//centro en eje y 
+	mov x9,430		//centro en eje x	
+	bl circulo 
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,40		//radio del circulo 
+	mov x8,285		//centro en eje y 
+	mov x9,610		//centro en eje x	
+	bl circulo
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,25		//radio del circulo 
+	mov x8,270		//centro en eje y 
+	mov x9,550		//centro en eje x	
+	bl circulo
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 35		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,35		//radio del circulo 
+	mov x8,230		//centro en eje y 
+	mov x9,580		//centro en eje x	
+	bl circulo
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,25		//radio del circulo 
+	mov x8,232		//centro en eje y 
+	mov x9,540		//centro en eje x	
+	bl circulo 
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,60		//radio del circulo 
+	mov x8,232		//centro en eje y 
+	mov x9,430		//centro en eje x	
+	bl circulo 
+    mov x1, 330         			//seteo tamaño   (alto)
+    mov x2, 255						// seteo tamaño  (ancho)
+    movz x10, 0xC5, lsl 16
+    movk x10, 0xB4AF, lsl 00	   
+    mov x3, 200   		// x3 es la coordenada de Y
+    movz x4, 390				// x4 es la coordenada de X
+    mov x19, 4 					//bits per pixel    
+    bl posicion
+    bl RectanguloPintado
+
+    movz x24, 0xFF8,lsl 16
+    bl Delay
+    
+
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,70		//radio del circulo 
+	mov x8,420		//centro en eje y 
+	mov x9,460		//centro en eje x	
+	bl circulo
+    //segundo
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,30		//radio del circulo 
+	mov x8,320		//centro en eje y 
+	mov x9,510		//centro en eje x	
+	bl circulo
+    // tercero
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,40		//radio del circulo 
+	mov x8,375		//centro en eje y 
+	mov x9,560		//centro en eje x	
+	bl circulo
+    // cuarto
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,30		//radio del circulo 
+	mov x8,450		//centro en eje y 
+	mov x9,550		//centro en eje x	
+	bl circulo 
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,50		//radio del circulo 
+	mov x8,430		//centro en eje y 
+	mov x9,600		//centro en eje x	
+	bl circulo
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 60		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,50		//radio del circulo 
+	mov x8,400		//centro en eje y 
 	mov x9,590		//centro en eje x	
 	bl circulo
+
+    movz x24, 0xFF8,lsl 16
+    bl Delay
+    bl background
+
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,55		//radio del circulo 
+	mov x8,435		//centro en eje y 
+	mov x9,440		//centro en eje x	
+	bl circulo
+    //segundo
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,22		//radio del circulo 
+	mov x8,328		//centro en eje y 
+	mov x9,510		//centro en eje x	
+	bl circulo
+    // tercero
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,33		//radio del circulo 
+	mov x8,385		//centro en eje y 
+	mov x9,560		//centro en eje x	
+	bl circulo
+    // cuarto
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,20		//radio del circulo 
+	mov x8,460		//centro en eje y 
+	mov x9,555		//centro en eje x	
+	bl circulo 
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 30		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,50		//radio del circulo 
+	mov x8,430		//centro en eje y 
+	mov x9,600		//centro en eje x	
+	bl circulo
+    movz x10, 0x00C5, lsl 16
+	movk x10, 0xB4AF, lsl 00
+	mov x2, SCREEN_HEIGHT         // Y Size
+	mov x11, 5		//diferencia entre la pos del eje x del centro y radio del circulo
+	mov x13, 1		//diferencia entre la pos del eje y del centro y radio del circuilo
+	mov x14, 60		//suma entre la pos en el eje x del centro del circulo y el radio del circulo
+	mov x7,50		//radio del circulo 
+	mov x8,400		//centro en eje y 
+	mov x9,590		//centro en eje x	
+	bl circulo
+
+
+
+    movz x24, 0xFF8,lsl 16
+    bl Delay
+    bl background
 
 
     ldr lr,[sp]
